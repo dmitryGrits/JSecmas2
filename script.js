@@ -7,6 +7,22 @@
 // Свойство pages (количество страниц) - число, количество страниц в книге.
 // Метод displayInfo() - выводит информацию о книге (название, автор и количество страниц).
 
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+    displayInfo() {
+        console.log(`Name: ${this.title}`);
+        console.log(`Author: ${this.author}`);
+        console.log(`Pages: ${this.pages}`);
+    }
+}
+
+const book1 = new Book("The Lord of the Rings", "J. R. R. Tolkien", 300);
+book1.displayInfo();
+
 // Задание 2: ""Управление списком студентов""
 // Реализуйте класс Student, представляющий студента, со следующими свойствами и методами:
 
