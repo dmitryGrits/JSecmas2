@@ -7,6 +7,22 @@
 // Свойство pages (количество страниц) - число, количество страниц в книге.
 // Метод displayInfo() - выводит информацию о книге (название, автор и количество страниц).
 
+// class Book {
+//     constructor(title, author, pages) {
+//         this.title = title;
+//         this.author = author;
+//         this.pages = pages;
+//     }
+//     displayInfo() {
+//         console.log(`Name: ${this.title}`);
+//         console.log(`Author: ${this.author}`);
+//         console.log(`Pages: ${this.pages}`);
+//     }
+// }
+
+// const book1 = new Book("The Lord of the Rings", "J. R. R. Tolkien", 300);
+// book1.displayInfo();
+
 // Задание 2: ""Управление списком студентов""
 // Реализуйте класс Student, представляющий студента, со следующими свойствами и методами:
 
@@ -16,17 +32,30 @@
 // Метод displayInfo() - выводит информацию о студенте (имя, возраст и класс).
 // javascript
 
-// // Пример использования класса
-// const student1 = new Student(""John Smith"", 16, ""10th grade"");
-// student1.displayInfo();
-// // Вывод:
-// // Name: John Smith
-// // Age: 16
-// // Grade: 10th grade
+class Student {
+    constructor(title, age, grade) {
+        this.title = title;
+        this.age = age;
+        this.grade = grade;
+    }
+    displayInfo() {
+        console.log(`Name: ${this.title}`);
+        console.log(`Age: ${this.age}`);
+        console.log(`Grade: ${this.grade}`);
+    }
+}
 
-// const student2 = new Student(""Jane Doe"", 17, ""11th grade"");
-// student2.displayInfo();
-// // Вывод:
-// // Name: Jane Doe
-// // Age: 17
-// // Grade: 11th grade"
+// Пример использования класса
+const student1 = new Student("John Smith", 16, "10th grade");
+student1.displayInfo();
+// Вывод:
+// Name: John Smith
+// Age: 16
+// Grade: 10th grade
+
+const student2 = new Student("Jane Doe", 17, "11th grade");
+student2.displayInfo();
+// Вывод:
+// Name: Jane Doe
+// Age: 17
+// Grade: 11th grade"
